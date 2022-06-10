@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2? family= Architects+Daughter &família = parisiense & display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+
+body {
+ font-size: 100%;
+ background-image:url( fundo.png);
+ background-position:center;
+ background-attachment:local;
+
+}
+
+.cabeçalho {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   padding: 24px;
+}
+.cabecalho-imagem {
+    size: 80px;
+    height: 50px;
+    
+}
+
+.cabecalho-menu {
+display: flex;
+gap: 32px;
+
+}
+.cabecalho-menu-item {
+    font-family:"architects+daughter",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: #ffffff;
+}
+.conteudo {
+margin-bottom: 80px;   
+border-top: 0.3px solid #000000;
+
+}
+
+.conteudo-principal {
+display: flex;
+flex-direction:column-reverse;
+justify-content: space-around;
+padding-left: 20px;
+
+}
+
+.conteudo-principal-escrito {
+ display: flex;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ flex-direction: column;
+ gap: 32px;
+}
+.conteudo-principal-escrito-titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  
+}
+
+.conteudo-principal-escrito-subtitulo {
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: 400;
+ font-size: 24px;
+ color: rgb(255, 255, 255);
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #222221;
+  width: 180px;
+  height: 30px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(255, 255, 255);
+  border-radius: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+
+}
+
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    padding-left: 50px;
+
+}
+.conteudo-secundario-titulo {
+
+    padding-top: 100px;
+    font-family: "parisiense", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color:  #ffffff;
+
+
+}
+
+.rodape {
+padding: 15px;
+border-top: 0.3px solid #000000 ;
+}
+ .rodape-imagem {
+
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   
+ }
+ .rodape-imagem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
+ 
+
+

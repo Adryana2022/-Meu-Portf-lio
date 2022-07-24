@@ -1,133 +1,433 @@
-@import url('https://fonts.googleapis.com/css2? family= Architects+Daughter &família = parisiense & display=swap');
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-
+:root{
+   scroll-behavior: smooth;
+   --bg:#020804;
+   --text_title: #f9f9f9;
+   --blue: #007ACC;
+   --bg_card: #212121;
+   --borda_card: #383838;
+   --text_texto: #ADADAD;
+   --teste: #6a6a6a3a;
 }
 
-
-body {
- font-size: 100%;
- background-image:url( fundo.png);
- background-position:center;
- background-attachment:local;
-
+.claro{
+   --bg:#f9f9f9;
+   --text_title: #000000;
+   --blue: #007ACC;
+   --bg_card: #eeeeee;
+   --borda_card: #c0c0c0;
+   --text_texto: #3a3a3a;
+   --teste: #e8e8e8;
 }
 
-.cabeçalho {
+a{
+   text-decoration: none;
+}
+
+.corpo{
+   background-color: var(--bg);
+   font-family: 'DM Sans', sans-serif;
+}
+
+.cabecalho{
+   width: 90%;
+   margin: 3% auto;
+}
+
+.cabecalho .container{
    display: flex;
-   flex-direction: row;
+   justify-content: space-between;
    align-items: center;
+}
+
+.titulo-cabecalho{
+   font-size: 29px;
+   font-weight: 700;
+}
+
+.titulo-cabecalho a{
+   color: var(--text_title);
+}
+
+.menu{
+   width: 35%;
+}
+
+.menu-navegacao{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.link-menu-nav{
+   text-decoration: none;
+   color: var(--text_title);
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.link-menu-nav:hover{
+   border-bottom: #0086df 2px solid;
+   transition: 100ms;
+}
+
+.tema{
+   text-align: center;
+}
+
+.bt-tema{
+   width: 25px;
+   height: 30px;
+}
+
+.bt-tema:hover{
+   cursor: pointer;
+}
+
+.titulo-tema{
+   color: var(--text_title);
+   font-size: 12px;
+}
+
+.bt-mobile{
+   display: none;
+}
+
+
+/*###################### INFO ######################*/
+.info{
+   width: 90%;
+   margin: 8% auto;
+}
+
+.info .container{
+   display:flex;
+   justify-content: space-between;
+   margin: 5% auto;
+}
+
+.apresentacao{
+   width: 27%;
+}
+
+.titulo-principal{
+   color: var(--text_title);
+   font-size: 36px;
+   font-weight: 800;
+   line-height: 1.2em;
+}
+
+.sub-titulo-principal{
+   color: #ADADAD;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.botao-info{
+   margin-top: 8%;
+}
+
+.bt-download{
+   padding: 10px 20px;
+   background-color: var(--blue);
+   color: #ffffff;
+   border:1px solid #333333;
+   font-family: 'DM Sans', sans-serif;
+   border-radius: 3px;
+   font-weight: 500;
+   margin-right: 2%;
+   min-width: fit-content;
+}
+
+.bt-contato{
+   padding: 10px 20px;
+   background-color: #171717;
+   color: #ffffff;
+   border:1px solid #333333;
+   font-family: 'DM Sans', sans-serif;
+   font-weight: 500;
+   border-radius: 3px;
+   min-width: fit-content;
+}
+
+.bt-contato:hover{
+   background-color: #2e2e2e;
+   transition: 450ms;
+   cursor: pointer;
+}
+
+.bt-download:hover{
+   background-color: #5eade2;
+   transition: 450ms;
+   cursor: pointer;
+}
+
+.ilustracao-principal{
+   width: 50%;
+   height: 35%;
+}
+
+
+/* ###################### Sobre mim ##################### */ 
+.sobre-mim{
+   width: 50%;
+   text-align: center;
+   margin: 5% auto;
+}
+
+.titulo-sobre-mim{
+   font-size: 30px;
+   line-height: 1.8em;
+   font-weight: bold;
+   color: var(--text_title);
+}
+
+.texto-sobre-mim{
+   color:var(--text_texto);
+   line-height: 1.4em;
+}
+
+
+/*###################### Icones de Contato ###################### */
+.redes-sociais{
+   display: flex;
+   width: 70%;
+   justify-content: space-between;
+   margin: 8% auto;
+   text-align:center;
+   line-height: 1.2em;
+}
+
+.card-perfil{
+   border: 1px solid transparent;
+   padding: 8px;
+}
+
+.card-perfil:hover{
+   border: 1px solid #0086dfcc;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 700ms;
+   box-shadow: 0px 0px 5px #0086dfa8;
+}
+
+.titulo-card{
+   font-size: 16px;
+   color: #F9F9F9;
+}
+
+.subtitulo-card ,.link-icon{
+   font-size: 13px;
+   color:var(--text_texto);
+}
+
+.card-perfil img{
+   width: 26px;
+   height: 26px;
+}
+
+
+/* ###################### Projetos ###################### */
+.conteudo-projetos{
+   width: 90%;
+   margin: 5% auto;
+}
+
+.bt_secao_projetos{
+   text-align: center;
+}
+
+.arrow{
+   border: solid var(--text_title);
+   border-width: 0 6px 6px 0;
+   display: inline-block;
+   padding: 12px;
+   margin-top: 1%;
+}
+
+.down{
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   transition: 300ms;
+}
+
+.up{
+   transform: rotate(-135deg);
+   -webkit-transform: rotate(-135deg);
+   transition: 300ms;
+}
+
+.arrow:hover{
+   cursor: pointer;
+}
+
+.conteudo-projetos .container{
+   display: flex;
    justify-content: space-around;
-   padding: 24px;
-}
-.cabecalho-imagem {
-    size: 80px;
-    height: 50px;
-    
-}
-
-.cabecalho-menu {
-display: flex;
-gap: 32px;
-
-}
-.cabecalho-menu-item {
-    font-family:"architects+daughter",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
-    font-size: 20px;
-    color: #ffffff;
-}
-.conteudo {
-margin-bottom: 80px;   
-border-top: 0.3px solid #000000;
-
+   flex-wrap: wrap;
+   flex-direction: row;
+   row-gap: 25px;
+   height: 540px;
+   overflow: hidden;
 }
 
-.conteudo-principal {
-display: flex;
-flex-direction:column-reverse;
-justify-content: space-around;
-padding-left: 20px;
-
+.container.container-ativo{
+   height: auto;
 }
 
-.conteudo-principal-escrito {
- display: flex;
- font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- flex-direction: column;
- gap: 32px;
-}
-.conteudo-principal-escrito-titulo{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-  
+.titulo-principal-projetos{
+   color: var(--text_title);
+   font-size: 30px;
+   font-weight: 700;
+   text-align: center;
+   margin-top: 10%;
+   line-height: 1.8em;
 }
 
-.conteudo-principal-escrito-subtitulo {
- font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-weight: 400;
- font-size: 24px;
- color: rgb(255, 255, 255);
+.link-projeto{
+   width: 30%;
+   text-decoration: none;
+   color: inherit;
 }
 
-.conteudo-principal-escrito-botao {
-  background-color: #222221;
-  width: 180px;
-  height: 30px;
-  border: none;
-  box-shadow: 4px 5px 4px rgba(255, 255, 255);
-  border-radius: 20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-
+.card-projetos{
+   background-color: var(--bg_card);
+   border: 1px solid;
+   border-color: var(--borda_card);
+   margin-bottom: 3%;
 }
 
-
-.conteudo-secundario {
-    display: flex;
-    flex-direction: column;
-    margin-top: 48px;
-    padding-left: 50px;
-
-}
-.conteudo-secundario-titulo {
-
-    padding-top: 100px;
-    font-family: "parisiense", cursive;
-    font-weight: 400;
-    font-size: 20px;
-    color:  #ffffff;
-
-
+.card-projetos:hover{
+   transform: scale(102%);
+   transition: 250ms;
+   cursor: pointer;
 }
 
-.rodape {
-padding: 15px;
-border-top: 0.3px solid #000000 ;
+.projeto{
+   background-color: #171717;
+   width: 80%;
+   height: 130px;
+   border: 1px solid;
+   border-color: var(--borda_card);
+   margin: 6% auto 2%;
 }
- .rodape-imagem {
 
-    height: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center
-   
- }
- .rodape-imagem {
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
+.img-previa-projeto{
+   width: 100%;
+   height: 130px;
+}
+
+.titulo-projetos{
+   font-size: 16px;
+   font-weight: 500;
+   margin: 5% auto 0;
+   width: 85%;
+   color: var(--text_title);
+}
+
+.texto-projetos{
+   font-size: 14px;
+   color: #8A8A8A;
+   margin: 2% auto 10%;
+   width: 85%;
 }
 
 
- 
+/* ###################### Academico ###################### */
+.conteudo-academico{
+   width: 90%;
+   margin: 0 auto;
+   color: var(--text_title);
+}
+
+.conteudo-academico .container{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.titulo-principal-academico{
+   font-size: 30px;
+   font-weight: 700;
+   text-align: center;
+   margin: 10% auto 3%;
+   line-height: 1.8em;
+}
+
+.card-academico{
+   width: 350px;
+   height: 180px;
+   background-color: var(--bg_card);
+   outline: #333333 solid 1px;
+   outline-color: var(--borda_card);
+   border-bottom: 4px solid transparent;
+   font-size: 15px;
+}
+
+.titulo-card-academico{
+   font-size: 20px;
+   font-weight: 500;
+   text-align: center;
+   width: 100%;
+   padding-top: 15px;
+}
+
+.card-academico:hover{
+   border-bottom: 4px solid #0086df;
+   transition: 150ms;
+}
+
+.lista-de-curso{
+   margin: 4% 10% 0;
+   list-style: disc;
+   line-height: 1.4em;
+}
+
+.lista-de-curso li:hover{
+   transition: 450ms;
+   color: #0086df;
+}
+
+.lista-de-curso li a{
+   color: var(--text_texto);
+}
+
+.lista-de-curso li a:hover{
+   text-decoration: underline;
+   transition: 450ms;
+}
+
+.bt-academico{
+   width: 100%;
+   margin: 8% 0;
+   text-align: center;
+}
+
+.bt-certificados{
+   text-decoration: none;
+   align-items: center;
+   color: #ffffff;
+   background-color: #007ACC;
+   padding: 1% 5%;
+   border-radius: 5px;
+}
+
+.bt-certificados:hover{
+   background-color: #5eade2;
+   transition: 450ms;
+}
 
 
+/* ###################### Rodape ###################### */
+.rodape{
+   width: 100%;
+   height: 25px;
+   background-color: var(--bg);
+   border-top: 1px solid;
+   border-color: var(--borda_card);
+}
+
+.titulo-principal-rodape{
+   color: var(--text_texto);
+   text-align: center;
+   font-size: 13px;
+   margin-top: 3px;
+}

@@ -1,56 +1,328 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html id="html" lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content=" Meu Primeiro portfolio falando tudo sobre minhas habilidades e projetos">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfolio</title>
-    <link rel="stylesheet" type="text/css"  href="style.css">
+   <meta charset='utf-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>Portfólio</title>
+   <link rel="shortcut icon" href="Conteudo/development.svg" type="image/x-icon">
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <meta name="description" content="Portfólio de Adriana Albuquerque.">
+   <!-- CSS -->
+   <link rel="stylesheet" href="style.css">
+   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+   <link rel="stylesheet" href="CSS/responsivo.css">
+   <!-- Fontes -->
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
-<body>
- <header class=cabeçalho>
-<img class="cabecalho-imagem" src="RADRIALY (600 × 400 px).png">
-<nav class="cabecalho-menu">
-    <a class="cabecalho-menu-item"> Sobre Mim </a>
-    <a class="cabecalho-menu-item"> Projetos </a>
-    <a class="cabecalho-menu-item"> Midias Sociais </a>
-    
-</nav>
- </header> 
-
-   
-<main class="conteudo">
-
-    <section class="conteudo-principal">
-    <div  class="conteudo-principal-escrito">
-    <h1  class="conteudo-principal-escrito-titulo"> Adriana Albuquerque </h1>
-    <h2  class="conteudo-principal-escrito-subtitulo"> Estudante de programação, Developer e Freelencer</h2>
-    <button class="conteudo-principal-escrito-botao"> Midias Sociais</button>
-    </div>
-     
-
-</section>
-
-    <section  class="conteudo-secundario">
-    <h3 class="conteudo-secundario-titulo">Iniciante em programação e apaixonada por tecnologia! </h3>
-
-    </section>
-</main>
-
-<footer class="rodape">
+<body class="corpo">
 
 
-
-
-</footer>
-
-
-
-
-
-
-</body>
-
-
-
-</html>
+	<!-- Secao cabecalho  -->
+	<header class="cabecalho">
+	   <div class="container">
+		  <div class="logo">
+			 <h2 class="titulo-cabecalho"><a class="" href="#">Portfólio</a></h2>
+			 <button class="bt-mobile"><img src="Conteudo/menu_black_24dp.svg" alt=""></button>
+		  </div>
+		  <nav class="menu">
+			 <ul class="menu-navegacao" id="teste">
+				<li> <a class="link-menu-nav" href="#Sobre-mim">Sobre mim</a></li>
+				<li> <a class="link-menu-nav" href="#conteudo-projetos">Projetos</a></li>
+				<li> <a class="link-menu-nav" href="#conteudo-academico">Habilidades</a></li>
+				<li class="tema">
+				   <img src="" alt=""
+					  class="bt-tema">
+				   <p class="titulo-tema">Tema</p>
+				</li>
+			 </ul>
+		  </nav>
+	   </div>
+	</header>
+ 
+ 
+	<!-- Secao Info -->
+	<main class="conteudo-principal">
+	   <div class="info">
+		  <div class="container">
+ 
+			 <div class="apresentacao">
+				<h1 class="titulo-principal"> Olá, Sou Adriana Albuquerque! </h1>
+				<h2 class="sub-titulo-principal">Desenvolvedora FullStack, Administradora, Design UI/UX e Freelencer </h2>
+ 
+				<div class="bt-info">
+				   <div class="container">
+					  <a class="bt-download" href="Currículo  Adriana.pdf" target="_blank"
+						 download>
+						 Download CV
+					  </a>
+ 
+					  <a class="bt-contato"  href="https://alvo.chat/9DV" target="_blank">
+						 Entre em contato Comigo
+					  </a>
+				   </div>
+				</div>
+			 </div>
+			 <img class="ilustracao-principal" src="fundo.png"
+				alt="Desenho da minha foto.">
+		  </div>
+	   </div>
+ 
+ 
+ 
+	   <!--  Seção sobre mim  -->
+	   <section id="sobre-mim" class="sobre-mim">
+		  <h2 class="titulo-sobre-mim">Sobre Mim</h2>
+		  <p class="texto-sobre-mim">Me chamo Adriana Albuquerque iniciei meus estudos na área de desenvolvimento em dezembro 2021.
+			 Sou formada em Administração de Empresas, com experiência de 10 anos em empresa Multinacional, ao iniciar a transição de carreira para área Dev, encontrei o qe estava faltando simplesmente me apaixonei.
+			 Tenho conhecimento em Manutenção de Hadware e redes,  e Design porém estou estudando várias tecnologias, com o objetivo de me tornar Desenvolvedora FullStack.
+			 Disponível para qualquer modalidade de trabalho.
+		  </p>
+		  <p class="texto-sobre-mim"> Estudando programação Java, desenvolvimento FullStack e Desenvolvimento de Sistemas na ETE Ginásio Pernambucano.
+		
+		  </p>
+	   </section>
+ 
+ 
+	   <section class="redes-sociais">
+ 
+		  <div class="card-icon-perfil">
+			 <a class="link-icon" href="https://github.com/Adryana2022" target="_blank">
+				<div class="card-perfil">
+				   <img src="Conteudo/github.svg" alt="Icone da logo GitHub, um pequeno gato de cor azul">
+				   <h3 class="titulo-card">GitHub</h3>
+				   <h4 class="subtitulo-card">Adryana2022</h4>
+				</div>
+			 </a>
+		  </div>
+ 
+ 
+		  <div class="card-icon-perfil">
+			 <a href="fone" target="_blank">
+				<div class="card-perfil">
+				   <img src="Conteudo/phone.svg" alt="Imagem de um telefone de cor azul">
+				   <h3 class="titulo-card">Telefone</h3>
+				   <h4 class="subtitulo-card">(11) 945797284</h4>
+				</div>
+			 </a>
+		  </div>
+ 
+ 
+		  <div class="card-icon-perfil">
+			 <a class="link-icon" href="https://mail.google.com/mail/u/0/?tab=km#inbox">
+				<div class="card-perfil">
+				   <img src="Conteudo/mail.svg" alt="Imagem de um envelope de cor azul">
+				   <h3 class="titulo-card">E-mail</h3>
+				   <h4 class="subtitulo-card">radrialy@gmail.com</h4>
+				</div>
+			 </a>
+		  </div>
+ 
+		  <div class="card-icon-perfil">
+			 <a class="link-icon" href="https://www.linkedin.com/in/adriana-albuquerque-03b63b6a/" target="blank">
+				<div class="card-perfil">
+				   <img src="Conteudo/linekdin.svg" alt="Logo do Linkedin em cor azul, logo contem as letras I e N">
+ 
+				   <h3 class="titulo-card">Linkedin</h3>
+				   <h4 class="subtitulo-card">Adriana Albuquerque</h4>
+				</div>
+			 </a>
+		  </div>
+	   </section>
+ 
+ 
+	   <!--  Seção Projetos  -->
+	   <section id="conteudo-projetos" class="conteudo-projetos">
+ 
+		  <h2 class="titulo-principal-projetos">Projetos</h2>
+ 
+		  <div class="container">
+ 
+			 <a class="link-projeto" href="https://github.com/SquadRecode01/Betin" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="imagem betin"
+						 alt="Imagem de pré-visualização do projeto Betin">
+				   </div>
+				   <h2 class="titulo-projetos">Betin</h2>
+				   <p class="texto-projetos"> Tecnologias: HTML, CSS, bootstrap.</p>
+				</div>
+			 </a>
+ 
+ 
+			 <a class="link-projeto" href="https://github.com/Adryana2022/projetoBanco" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="imagem projeto banco"
+						 alt="Imagem de pré-visualização do projeto Banco Digital">
+				   </div>
+				   <h2 class="titulo-projetos">Banco Digital</h2>
+				   <p class="texto-projetos">Tecnologias: Java </p>
+				</div>
+			 </a>
+ 
+ 
+			 <a class="link-projeto" href="https://github.com/Adryana2022/Calculadora-de-m-dia." target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="imagem calculadora"
+						 alt="Imagem de pré-visualização do projeto calculadora de media">
+				   </div>
+				   <h2 class="titulo-projetos"> Calculadora de media</h2>
+				   <p class="texto-projetos">Tecnologias: HTML, CSS e JS.</p>
+				</div>
+			 </a>
+ 
+ 
+			 <a class="link-projeto" href="https://github.com/Adryana2022/Projeto-StarWars-" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="proj star wais.png"
+						 alt="Imagem de pré-visualização do Projeto-StarWars-">
+				   </div>
+				   <h2 class="titulo-projetos">Projeto-StarWars-</h2>
+				   <p class="texto-projetos">Tecnologias: Java.</p>
+				</div>
+			 </a>
+ 
+ 
+			 <a class="link-projeto" href="https://github.com/Adryana2022/Voando-Alto" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="voando alto.png"
+						 alt="Imagem de pré-visualização do projeto  Voando alto agência de viagens">
+				   </div>
+				   <h2 class="titulo-projetos">Voando Alto</h2>
+				   <p class="texto-projetos">Tecnologias: HTML, CSS e bootstrap.</p>
+				</div>
+			 </a>
+ 
+	   <!-- <a class="link-projeto" href="https://willianstephano.github.io/NetInter/" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="Conteudo/previa-netinter.png"
+						 alt="Imagem de pré-visualização do projeto NetInter">
+				   </div>
+				   <h2 class="titulo-projetos">NetInter</h2>
+				   <p class="texto-projetos">Tecnologias: HTML e CSS</p>
+				</div>
+			 </a>
+ 
+ 
+			 <a class="link-projeto" href="https://willianstephano.github.io/Seu-Peso/" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="Conteudo/previa-seupeso .png"
+						 alt="Imagem de pré-visualização do projeto SeuPeso">
+				   </div>
+				   <h2 class="titulo-projetos">Seu IMC</h2>
+				   <p class="texto-projetos">Tecnologias: HTML, CSS e JS</p>
+				</div>
+			 </a>
+ 
+ 
+			 <a class="link-projeto" href="https://willianstephano.github.io/RecodePro-Clone/" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="Conteudo/previa-recode.png"
+						 alt="Imagem de pré-visualização do projeto RecodePro">
+				   </div>
+				   <h2 class="titulo-projetos">RecodePro Clone</h2>
+				   <p class="texto-projetos">Tecnologias: HTML, CSS e JS</p>
+				</div>
+			 </a>
+ 
+ 
+			 <a class="link-projeto" href="https://willianstephano.github.io/Instagram-Clone/" target="_blank">
+				<div class="card-projetos">
+				   <div class="projeto">
+					  <img class="img-previa-projeto" src="Conteudo/previa-insta.png"
+						 alt="Imagem de pré-visualização do projeto ">
+				   </div>
+				   <h2 class="titulo-projetos">Instagram Login Clone</h2>
+				   <p class="texto-projetos">Tecnologias: HTML, CSS e JS</p>
+				</div>
+			 </a>
+		  </div>
+		  <div class="bt_secao_projetos"><i class="arrow down"></i></div>
+	 -->
+		</section>
+ 
+ 
+	   <!--  Seção Academico  -->
+	   <section class="conteudo-academico" id="conteudo-academico">
+		  <h2 class="titulo-principal-academico">Histórico Acadêmico</h2>
+ 
+		  <div class="container">
+ 
+			 <!-- <div class="card-academico">
+				<h2 class="titulo-card-academico">Formação</h2>
+                   <p> Bacharel em Administração de Empresas - 2014</p>
+				   <h2 class="titulo-card-academico">Cursos concluídos</h2>
+				<ul class="lista-de-curso">
+				   <li>
+					  <a href="Conteudo/Certificados/Certificado De Conclusao HTML Formacao Basica.pdf"
+						 target="_blank">Linkedin HTML Básico</a>
+				   </li>
+				   <li>
+					  <a href="Conteudo/Certificados/Certificado De Conclusao Descubra o CSS.pdf"
+						 target="_blank">Linkedin CSS</a>
+				   </li>
+				   <li>
+					  <a href="Conteudo/Certificados/Introdução a Criação de Websites.pdf" target="_blank">DIO Criação
+						 de Websites </a>
+				   </li>
+				   <li>
+					  <a href="Conteudo/Certificados/Fundação Bradesco - Ética no Desenvolvimento de Sistemas.pdf"
+						 target="_blank">Ética no Desenvolvimento de Sistemas</a>
+				   </li>
+				   <li>
+					  <a href="Conteudo/Certificados/Fundação Bradesco - HTML Avançado.pdf" target="_blank">HTML
+						 Avançado</a>
+				   </li>
+				</ul>
+			 </div>
+  -->
+			 <div class="card-academico">
+				<h2 class="titulo-card-academico"> Cursos em Andamento</h2>
+				<ul class="lista-de-curso">
+				   <li>
+					  <a href="https://recodepro.org.br/o-que-fazemos/" target="_blank">RecodePro - Programação FullStack</a>
+				   </li>
+				  
+				   <li>
+					  <a href="https://www.alura.com.br/curso-online-posicione-elementos-com-flexbox"
+						 target="_blank"> Desenvolvimento de Sistemas - Ete Ginásio Pernambucano </a>
+				   </li>
+				   <li>
+					  <a href="https://admtec.org.br/curso-de-qualificacao-socioprofissional-em-programacao-de-software" target="_blank">AdmTec
+						 Programação de software foco em Java</a>
+				   </li>
+ 
+				</ul>
+			 </div>
+ 
+		  </div>
+		  <div class="bt-academico">
+			 <a class="bt-certificados"
+				href="https://drive.google.com/drive/folders/1x0jwl9e-lVlpun40HKgy2WRpNz3fi1Cz?usp=sharing"
+				target="_blanck">Acesse todos meus certificados criar pasta sopara certificados </a>
+		  </div>
+	   </section>
+ 
+	</main>
+ 
+	<!--  Rodape  -->
+	<footer class="rodape">
+	   <h2 class="titulo-principal-rodape"> &copy; Adriana Almeida</h2>
+	</footer>
+ 
+ 
+	<!-- JS -->
+	<script src='main.js'></script>
+ </body>
+ 
+ </html>
+ 
